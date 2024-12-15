@@ -4,7 +4,7 @@ import React from 'react';
 const Layout = ({ children }: { children: React.ReactNode }) => {
 	return (
 		<div className='flex min-h-screen'>
-			<section className='hidden w-1/2 items-center justify-center bg-brand p-10 lg:flex xl:w-2/5'>
+			<section className='hidden w-1/2 items-center justify-center bg-brand lg:flex xl:w-2/5'>
 				<div className='flex max-h-[800px] max-w-[430px] flex-col justify-center space-y-12'>
 					<Image
 						src='/assets/icons/logo-full.svg'
@@ -14,9 +14,9 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
 						className='h-auto'
 					/>
 					<div className='space-y-5 text-white'>
-						<h1 className='h1'>manage your files the best way</h1>
+						<h1 className='h1'>بهترین روش برای مدیریت فایل‌های شما</h1>
 						<p className='body-1'>
-							This is a place where you can store all your documents.
+							این مکانی است که می‌توانید تمام اسناد خود را ذخیره کنید.
 						</p>
 						<Image
 							src='/assets/images/files.png'

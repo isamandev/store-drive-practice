@@ -52,7 +52,7 @@ const Search = () => {
 				<Image src='/assets/icons/search.svg' alt='Search' width={24} height={24} />
 				<Input
 					value={query}
-					placeholder='Search ...'
+					placeholder='جستجو ...'
 					className='search-input'
 					onChange={(e) => setQuery(e.target.value)}
 				/>
@@ -81,7 +81,7 @@ const Search = () => {
 								</li>
 							))
 						) : (
-							<p className='empty-result'>No files found</p>
+							<p className='empty-result'>هیچ فایلی یافت نشد</p>
 						)}
 					</ul>
 				)}

@@ -34,8 +34,8 @@ const FileUploader = ({ ownerId, accountId, className }: Props) => {
 					return toast({
 						description: (
 							<p className='body-2 text-white'>
-								<span className='font-semibold'>{file.name}</span> is too large. Max file
-								size is 50MB.
+								<span className='font-semibold'>{file.name}</span> خیلی بزرگ است. حداکثر
+								اندازه فایل 50MB است.
 							</p>
 						),
 						className: 'error-toast',
@@ -68,12 +68,12 @@ const FileUploader = ({ ownerId, accountId, className }: Props) => {
 		<div {...getRootProps()} className='cursor-pointer'>
 			<input {...getInputProps()} />
 			<Button type='button' className={cn('uploader-button', className)}>
-				<Image src='/assets/icons/upload.svg' alt='upload' width={24} height={24} />{' '}
-				<p>Upload</p>
+				<Image src='/assets/icons/upload.svg' alt='upload' width={24} height={24} />
+				<p>بارگذاری</p>
 			</Button>
 			{files.length > 0 && (
 				<ul className='uploader-preview-list'>
-					<h4 className='h4 text-light-100'>Uploading</h4>
+					<h4 className='h4 text-light-100'>در حال بارگذاری</h4>
 
 					{files.map((file, index) => {
 						const { type, extension } = getFileType(file.name);

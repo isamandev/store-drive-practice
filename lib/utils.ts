@@ -181,21 +181,21 @@ export const constructDownloadUrl = (bucketFileId: string) => {
 export const getUsageSummary = (totalSpace: any) => {
 	return [
 		{
-			title: 'Documents',
+			title: 'اسناد',
 			size: totalSpace.document.size,
 			latestDate: totalSpace.document.latestDate,
 			icon: '/assets/icons/file-document-light.svg',
 			url: '/documents',
 		},
 		{
-			title: 'Images',
+			title: 'تصاویر',
 			size: totalSpace.image.size,
 			latestDate: totalSpace.image.latestDate,
 			icon: '/assets/icons/file-image-light.svg',
 			url: '/images',
 		},
 		{
-			title: 'Media',
+			title: 'رسانه',
 			size: totalSpace.video.size + totalSpace.audio.size,
 			latestDate:
 				totalSpace.video.latestDate > totalSpace.audio.latestDate
@@ -205,7 +205,7 @@ export const getUsageSummary = (totalSpace: any) => {
 			url: '/media',
 		},
 		{
-			title: 'Others',
+			title: 'سایر',
 			size: totalSpace.other.size,
 			latestDate: totalSpace.other.latestDate,
 			icon: '/assets/icons/file-other-light.svg',

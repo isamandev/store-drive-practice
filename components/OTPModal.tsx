@@ -30,7 +30,7 @@ const OTPModal = ({ accountId, email }: { accountId: string; email: string }) =>
 
 			if (sessionId) router.push('/');
 		} catch (error) {
-			console.log('Failed to verify OTP', error);
+			console.log('تایید کد OTP ناموفق بود', error);
 		}
 		setIsLoading(false);
 	};
@@ -38,12 +38,13 @@ const OTPModal = ({ accountId, email }: { accountId: string; email: string }) =>
 	const handleResendOtp = async () => {
 		await sendEmailOTP({ email });
 	};
+
 	return (
 		<AlertDialog open={isOpen} onOpenChange={setIsOpen}>
 			<AlertDialogContent className='shad-alert-dialog'>
 				<AlertDialogHeader className='relative flex justify-center'>
 					<AlertDialogTitle className='h2 text-center'>
-						Enter your OTP{' '}
+						کد OTP خود را وارد کنید{' '}
 						<Image
 							src='/assets/icons/close-dark.svg'
 							alt='close'
@@ -54,7 +55,7 @@ const OTPModal = ({ accountId, email }: { accountId: string; email: string }) =>
 						/>
 					</AlertDialogTitle>
 					<AlertDialogDescription className='subtitle-2 text-center text-light-100'>
-						We&apos;ve sent a code to <span className='pl-1 text-brand'>{email}</span>
+						کدی به <span className='pl-1 text-brand'>{email}</span> ارسال شده است.
 					</AlertDialogDescription>
 				</AlertDialogHeader>
 				<InputOTP maxLength={6} value={password} onChange={setPassword}>
@@ -75,7 +76,7 @@ const OTPModal = ({ accountId, email }: { accountId: string; email: string }) =>
 							className='shad-submit-btn h-12'
 							type='button'
 						>
-							Submit
+							ارسال
 							{isLoading && (
 								<Image
 									src='/assets/icons/loader.svg'
@@ -87,14 +88,14 @@ const OTPModal = ({ accountId, email }: { accountId: string; email: string }) =>
 							)}
 						</AlertDialogAction>
 						<div className='subtitle-2 m-2 text-center text-light-100'>
-							Didn&apos;t get a code?
+							کدی دریافت نکردید؟
 							<Button
 								type='button'
 								variant='link'
 								className='pl-1 text-brand'
 								onClick={handleResendOtp}
 							>
-								Click to resend
+								برای ارسال مجدد کلیک کنید
 							</Button>
 						</div>
 					</div>

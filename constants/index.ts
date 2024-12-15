@@ -1,26 +1,26 @@
 export const navItems = [
 	{
-		name: 'Dashboard',
+		name: 'داشبورد',
 		icon: '/assets/icons/dashboard.svg',
 		url: '/',
 	},
 	{
-		name: 'Documents',
+		name: 'اسناد',
 		icon: '/assets/icons/documents.svg',
 		url: '/documents',
 	},
 	{
-		name: 'Images',
+		name: 'تصاویر',
 		icon: '/assets/icons/images.svg',
 		url: '/images',
 	},
 	{
-		name: 'Media',
+		name: 'رسانه‌ها',
 		icon: '/assets/icons/video.svg',
 		url: '/media',
 	},
 	{
-		name: 'Others',
+		name: 'سایر موارد',
 		icon: '/assets/icons/others.svg',
 		url: '/others',
 	},
@@ -28,27 +28,27 @@ export const navItems = [
 
 export const actionsDropdownItems = [
 	{
-		label: 'Rename',
+		label: 'تغییر نام',
 		icon: '/assets/icons/edit.svg',
 		value: 'rename',
 	},
 	{
-		label: 'Details',
+		label: 'جزئیات',
 		icon: '/assets/icons/info.svg',
 		value: 'details',
 	},
 	{
-		label: 'Share',
+		label: 'اشتراک‌گذاری',
 		icon: '/assets/icons/share.svg',
 		value: 'share',
 	},
 	{
-		label: 'Download',
+		label: 'دانلود',
 		icon: '/assets/icons/download.svg',
 		value: 'download',
 	},
 	{
-		label: 'Delete',
+		label: 'حذف',
 		icon: '/assets/icons/delete.svg',
 		value: 'delete',
 	},
@@ -56,27 +56,27 @@ export const actionsDropdownItems = [
 
 export const sortTypes = [
 	{
-		label: 'Date created (newest)',
+		label: 'تاریخ ایجاد (جدیدترین)',
 		value: '$createdAt-desc',
 	},
 	{
-		label: 'Created Date (oldest)',
+		label: 'تاریخ ایجاد (قدیمی‌ترین)',
 		value: '$createdAt-asc',
 	},
 	{
-		label: 'Name (A-Z)',
+		label: 'نام (A-Z)',
 		value: 'name-asc',
 	},
 	{
-		label: 'Name (Z-A)',
+		label: 'نام (Z-A)',
 		value: 'name-desc',
 	},
 	{
-		label: 'Size (Highest)',
+		label: 'اندازه (بزرگ‌ترین)',
 		value: 'size-desc',
 	},
 	{
-		label: 'Size (Lowest)',
+		label: 'اندازه (کوچک‌ترین)',
 		value: 'size-asc',
 	},
 ];

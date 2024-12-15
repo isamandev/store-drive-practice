@@ -164,10 +164,10 @@
 		@apply bg-brand button hover:bg-brand-100 transition-all rounded-full !important;
 	}
 	.shad-otp {
-		@apply w-full flex gap-1 sm:gap-2 justify-between !important;
+		@apply w-full flex flex-row-reverse gap-1 sm:gap-2 justify-between !important;
 	}
 	.shad-otp-slot {
-		@apply text-[40px] font-medium rounded-xl ring-brand shadow-drop-1 text-brand-100 justify-center flex border-2 border-light-300 size-12 md:size-16 gap-5 !important;
+		@apply text-[40px] font-medium rounded-xl ring-brand shadow-drop-1 text-brand-100 justify-center flex  border-2 border-light-300 size-12 md:size-16 gap-5 !important;
 	}
 
 	.shad-sheet {
@@ -300,10 +300,10 @@
 		@apply flex max-h-[800px] w-full max-w-[580px] flex-col justify-center space-y-6 transition-all lg:h-full lg:space-y-8 !important;
 	}
 	.form-title {
-		@apply h1 text-center text-light-100 md:text-left !important;
+		@apply h1 text-center text-light-100 md:text-right !important;
 	}
 	.form-submit-button {
-		@apply primary-btn h-[66px] !important;
+		@apply primary-btn h-[66px] text-lg !important;
 	}
 	.error-message {
 		@apply body-2 mx-auto w-fit rounded-xl bg-error/5 px-8 py-4 text-center text-error !important;
@@ -319,7 +319,7 @@
 
 	/* Chart */
 	.chart {
-		@apply flex items-center rounded-[20px] bg-brand p-5 text-white md:flex-col xl:flex-row !important;
+		@apply flex items-center rounded-[20px] bg-brand px-2 text-white md:flex-col xl:flex-row !important;
 	}
 	.chart-container {
 		@apply mx-auto aspect-square w-[180px] text-white xl:w-[250px] !important;
@@ -419,7 +419,7 @@
 		@apply remove-scrollbar hidden h-screen w-[90px] flex-col overflow-auto px-5 py-7 sm:flex lg:w-[280px] xl:w-[325px] !important;
 	}
 	.sidebar-nav {
-		@apply h5 mt-9 flex-1 gap-1 text-brand !important;
+		@apply h5 mt-6 flex-1 text-brand !important;
 	}
 	.sidebar-nav-item {
 		@apply flex text-light-100 gap-4 rounded-xl lg:w-full justify-center lg:justify-start items-center h5 lg:px-[30px] h-[52px] lg:rounded-full !important;

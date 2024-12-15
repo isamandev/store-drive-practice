@@ -93,7 +93,7 @@ const MobileNavigation = ({
 							onClick={async () => await signOutUser()}
 						>
 							<Image src='/assets/icons/logout.svg' alt='logo' width={24} height={24} />
-							<p>Logout</p>
+							<p>خروج</p>
 						</Button>
 					</div>
 				</SheetContent>
